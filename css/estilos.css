@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+/* Header */
+.main-header {
+    background-color: #b52454;
+    padding: 15px;
+    text-align: center;
+}
+
+.main-logo img{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+/* Main */
+.main-content {
+    text-align: center;
+    background-color: #390c1b;
+}
+
+/* COMENTARIO: Probablemente debería usar una clase acá */
+.main-nav ul li {
+    display: inline;
+    margin-right: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+/* Secciones */
+/* COMENTARIO: La idea es que estas secciones esten organizadas como en el wireframe, eventualmente */
+.nosotros-section {
+    /* COMENTARIO: Seguramente cambie esta imagen, no me gusta como queda */
+    background-image: url(../assets/img/image.png);
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+.nosotros-section h1 {
+    color: white;
+    text-transform: uppercase;
+    width: 10rem;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.mision-section,
+.valores-section,
+.historia-section {
+    color: white;
+    padding: 25px;
+    font-size: 25px;
+}
+
+.mision-section h2,
+.valores-section h2,
+.historia-section h2 {
+    background-color: #b52454;
+    font-size: 45px;
+    text-align: center;
+
+}
+.mision-section p,
+.valores-section p,
+.historia-section p {
+    background-color: #d37c98;
+    color: #333;
+    padding: 10px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #fccd5d;
+    padding:10px;
+    text-align: center;
+    /* COMENTARIO: Intenté que el footer quede distribuido horizontalmente, pero no puedo sin usar flexbox :( */
+}
+
+
+/* Navegación */
+.nav-footer ul {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-footer li {
+    margin: 10px 0;
+}
+
+.nav-footer a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Redes sociales */
+.social-media-logo {
+    color: #b52454;
+    text-decoration: none;
+}
+
+.footer-socials-section {
+    display: inline-block;
+    font-size: 24px;
+}
+
+/* Ubicación */
+.footer-address-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-address{
+    font-size: 16px;
+    font-style: normal;
+    padding: 10px;
+}
+
+.footer-address iframe {
+    margin-top: 20px;
+}
+
+/* Inicio --IGNORAR-- */
+
+.logo-container img {
+    background-color: darkslategray;
+    max-width: 15rem;
+}
+
+/* Colecciones --IGNORAR--
+
+.coleccion-card img {
+    max-width: 500px;
+} 
+*/
