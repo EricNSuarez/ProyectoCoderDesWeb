@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* Usé esto para que elementos estaban generando un scrollbar horizontal en algunas páginas */
+    /* outline: 1px solid #f00 !important;   */
 }
 
 /* Títulos */
@@ -12,7 +14,12 @@ h1, h2, h3, h4 {
 }
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /* Header */
@@ -27,133 +34,271 @@ body {
     max-height: 50px;
 }
 
-/* Main */
-.main-content {
-    text-align: center;
-    background-color: #390c1b;
-}
-
-/* COMENTARIO: Probablemente debería usar una clase acá */
-.main-nav ul li {
-    display: inline;
-    margin-right: 1rem;
+.main-nav-li {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
 
-.main-nav ul li a {
+.main-nav-a {
     text-decoration: none;
     text-transform: uppercase;
     color: whitesmoke;
 }
 
+.main-nav-a:hover {
+    color: #801450;
+}
+
+.a-current {
+    color: #ffff99;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* Footer */
+.footer-container {
+    background-color: #fccd5d;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* Reordenar footer */
+@media (min-width: 768px) {
+    .footer-legal-section {
+        order: 1;
+    }
+
+    .footer-socials-section {
+        order: 2;
+    }
+
+    .footer-address-section {
+        order: 3
+    }
+} 
+
+/* Redes sociales */
+.social-media-logo-div {
+    /* Intenté usar 'justify-content-center' de bootstrap para esto, pero después no me reconocía el cambio con la media-query */
+    justify-content: center;
+}
+
+.social-media-logo {
+    color: #b52454;
+    font-size: 32px;
+    text-decoration: none;
+    margin-top: 5px;
+    max-width: fit-content;
+}
+
+@media (min-width: 768px) {
+    .social-media-header {
+        display: flex;
+        text-align: left;
+    }
+
+    .social-media-logo-div {
+        justify-content: left;
+    }
+    .social-media-logo {
+        text-align: left;
+    }
+}
+
+
+.footer-address{
+    font-size: 16px;
+    font-style: normal;
+    margin-bottom: 1px;
+}
+
+@media (min-width: 768px) {
+    .footer-address {
+        text-align: right;
+        margin-right: 5px;
+    }
+} 
+
+/* Legal */
+.legal-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.legal-links-item {
+    font-size: 18px;
+    position: relative;
+    display: block;
+    a {
+        text-decoration: none;
+        color: #212529;
+    }
+}
+
+@media (min-width: 768px) {
+    .legal-links-item {
+        text-align: left;
+    }
+}
+
+
 /* Secciones */
-/* COMENTARIO: La idea es que estas secciones esten organizadas como en el wireframe, eventualmente */
-.nosotros-section {
-    /* COMENTARIO: Seguramente cambie esta imagen, no me gusta como queda */
+/* Main */
+
+.main-section {
     background-image: url(../assets/img/image.png);
     background-position:top;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 10px;
+    min-height: 300px;
+
+    h1 {
+        color: white;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        font-size: 60px;
+    }
 }
 
-.nosotros-section h1 {
-    color: white;
-    text-transform: uppercase;
-    width: 10rem;
-    text-align: center;
-    margin: 20px auto;
+.carousel .carousel-item {
+    h5, p {
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+    
+    .container {
+        max-width: 1092px;
+    }
+
+    .container img {
+        max-height: 600px;
+        min-width: auto;
+    }
+}
+
+/* NOSOTROS */ 
+.nosotros-section {
+    background-image: url(../assets/img/image.png);
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+
+    h1 {
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    iframe {
+        max-width: 600px;
+        margin: auto;
+    }
+
 }
 
 .mision-section,
 .valores-section,
 .historia-section {
-    color: white;
     padding: 25px;
     font-size: 25px;
-}
-
-.mision-section h2,
-.valores-section h2,
-.historia-section h2 {
-    background-color: #b52454;
-    font-size: 45px;
     text-align: center;
-
-}
-.mision-section p,
-.valores-section p,
-.historia-section p {
-    background-color: #d37c98;
     color: #333;
+
+    h2 {
+        font-size: 45px;
+    }
+
+    p {
+        padding: 10px;
+    }
+}
+
+.valores-section {
+    background-color: #711461;
+    background-image: url("../assets/img/background-binding-dark.png");
+    color: white;
+    
+}
+
+/* CONTACTO */
+.contacto-main {
+    background-color: #711461;
+    background-image: url("../assets/img/background-binding-dark.png");
+    color: white;
+}
+
+.title-h3-dark-bg {
+    color: #f9d108;
+    text-transform: uppercase;
+}
+
+.contacto-img img {
+    object-fit: none; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #212529;
+  }
+
+#floatingTextarea.form-comentarios {
+    height: 130px;
+}
+
+.contacto-btn {
+    background-color: #c61476;
+    border-color: #c61476;
+}
+
+.form-control:focus {
+    border-color: #c61476;
+    box-shadow: 0 0 0 .25rem #fd0dd840;
+}
+
+/* CALENDARIO */
+.eventos-section {
+    background-image: url(../assets/img/publico-image-dark-overlay.jpg);    
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 10px;
+    min-height: 250px;
+    
+    h1, span {
+        color: white  ;
+        text-shadow: 0px 1px 1px #333;
+    }
 }
 
-
-/* Footer */
-footer {
-    background-color: #fccd5d;
-    padding:10px;
-    text-align: center;
-    /* COMENTARIO: Intenté que el footer quede distribuido horizontalmente, pero no puedo sin usar flexbox :( */
+/* Colecciones */
+.colecciones-section {
+    background: black;
+    background: linear-gradient(rgba(171, 171, 171, 0.1), #000000cc), url(../assets/img/colecciones.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    
+    h1, p {
+        color: white;
+        text-shadow: 1px 0px 1px #333;
+    }
 }
 
-
-/* Navegación */
-.nav-footer ul {
-    display: inline;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.coleccion-card {
+    font-weight:500;
 }
 
-.nav-footer li {
-    margin: 10px 0;
+.coleccion-item-price {
+    text-align: right;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
-.nav-footer a {
-    text-decoration: none;
-    font-size: 16px;
+.coleccion-item-name {
+    text-align: left;
 }
-
-/* Redes sociales */
-.social-media-logo {
-    color: #b52454;
-    text-decoration: none;
-}
-
-.footer-socials-section {
-    display: inline-block;
-    font-size: 24px;
-}
-
-/* Ubicación */
-.footer-address-section {
-    padding: 20px;
-    text-align: center;
-}
-
-.footer-address{
-    font-size: 16px;
-    font-style: normal;
-    padding: 10px;
-}
-
-.footer-address iframe {
-    margin-top: 20px;
-}
-
-/* Inicio --IGNORAR-- */
-
-.logo-container img {
-    background-color: darkslategray;
-    max-width: 15rem;
-}
-
-/* Colecciones --IGNORAR--
-
-.coleccion-card img {
-    max-width: 500px;
-} 
-*/

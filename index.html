@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Placeholder_Team</title>
+    <title>Phoenix Fury</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--estilos-->
     <link rel="stylesheet" href="./css/estilos.css">
     <!--favicon-->
@@ -11,82 +13,138 @@
     <!--iconos de fontawesome-->
     <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header class="main-header">
-        <a href="./index.html" class="main-logo">
-            <img src="./assets/img/logo.png" alt="Logo">
-        </a>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/calendario.html">Calendario</a></li>
-                <li><a href="./pages/colecciones.html">Colecciones</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+<body class="container-fluid h-100">
+    <header class="row">
+        <nav class="navbar navbar-expand-lg main-header">
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="main-logo navbar-brand" href="./index.html">
+                <img src="./assets/img/logo.png" alt="Logo">
+            </a>
+            <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                    <li class="main-nav-li nav-item">
+                        <a class="main-nav-a a-current nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="main-nav-li nav-item">
+                        <a class="main-nav-a nav-link" href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="main-nav-li nav-item">
+                        <a class="main-nav-a nav-link" href="./pages/calendario.html">Calendario</a>
+                    </li>
+                    <li class="main-nav-li nav-item">
+                        <a class="main-nav-a nav-link" href="./pages/colecciones.html">Colecciones</a>
+                    </li>
+                    <li class="main-nav-li nav-item">
+                        <a class="main-nav-a nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
-        <section>
-            <h1>Inicio</h1>
-            <img src="./assets/img/image.png" alt="Jugador de e-sport frente a una computadora">    
-        </section>
-        <section>
-            <!-- COMENTARIO: La idea es usar imágenes más bonitas, pero no encontré nada, los logos son un placeholder -->
-            <h2>Conoce los equipos</h2>
-            <div class="logo-container">
-                <img src="./assets/img/league-of-legends-logo.png" alt="League of legends logo">
-                <span>League of Legends</span>
-                <a href="http://www.leagueoflegends.com" target="_blank"></a>
+    <main class="row">
+        <div class="col">
+            <div class="main-section row text-center d-flex align-items-center mb-2">
+                <h1 class="text-shadow text-uppercase h1">Phoenix Fury</h1>
             </div>
-            <div class="logo-container">
-                <img src="./assets/img/valorant-logo.png" alt="Valorant logo">
-                <span>Valorant</span>
-                <a href="https://playvalorant.com/" target="_blank"></a>
+            <div class="row text-center justify-content-center">
+                <h2 class="display-2">Descubre la Furia del Fénix</h2>
+                <span class="lead">Te invitamos a conocer a nuestros equipos que compiten bajo nuestro estandarte. Cada uno de ellos, al igual que Phoenix, muestra una increíble resiliencia y un ardiente deseo de victoria. ¡Únete a nosotros y siente la furia del fénix en cada competencia! </span>
             </div>
-            <div class="logo-container">
-                <img src="./assets/img/tft-logo.png" alt="Teamfight Tactics logo">
-                <span>Teamfight Tactics</span>
-                <a href="https://teamfighttactics.leagueoflegends.com/" target="_blank"></a>
+            <div class="row mb-2 mt-5">
+                <div class="container">
+                    <div id="carouselExampleCaptions" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="99999">
+                            <div class="container">
+                                <img src="./assets/img/lol-game-img.jpg" class="d-block w-100" alt="League of Legends">
+                            </div>
+                            <div class="carousel-caption d-flex flex-column d-md-block">
+                            <h5>League of Legends</h5>
+                            <p class="d-none d-md-block">Los maestros del carril y el control del mapa.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="99999">
+                            <div class="container">
+                                <img src="./assets/img/tft-game-img.jpg" class="d-block w-100" alt="Teamfight Tactics">
+                            </div>
+                            <div class="carousel-caption d-flex flex-column d-md-block">
+                            <h5>Teamfight Tactics</h5>
+                            <p class="d-none d-md-block">Estrategia y sinergia en cada movimiento.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="99999">
+                            <div class="container">
+                                <img src="./assets/img/valorant-game-img.jpg" class="d-block w-100" alt="Valorant">
+                            </div>
+                            <div class="carousel-caption d-flex flex-column d-md-block">
+                            <h5>Valorant</h5>
+                            <p class="d-none d-md-block">Disparos precisos y tácticas letales en cada ronda.</p>
+                            </div>
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev dark" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
-    <footer>
-        <nav class="nav-footer">
-            <ul>
-                <li><a href="https://www.google.com/" target="_blank">Acuerdos y condiciones</a></li>
-                <li><a href="https://www.google.com/" target="_blank">Política de privacidad</a></li>
-                <li><a href="https://www.google.com/" target="_blank">Envíos y devoluciones</a></li>
-                <li><a href="./pages/contacto.html" target="_blank">Contactacte con nosotros</a></li>
-            </ul>
-        </nav>
-        <section class="footer-socials-section"> 
-            <span>Seguinos en:</span>
-            <a href="http://www.twitter.com/" target="_blank" class="social-media-logo">
-                <i class="fa-brands fa-twitter icon"></i>
-            </a>
-            <a href="http://www.facebook.com/" target="_blank" class="social-media-logo">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="http://www.instagram.com" target="_blank" class="social-media-logo">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="http://www.twitch.com/" target="_blank" class="social-media-logo">
-                <i class="fa-brands fa-twitch"></i>
-            </a>
-            <a href="http://www.youtube.com/" target="_blank" class="social-media-logo">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-        </section>
-        <section class="footer-address-section">
-            <address class="footer-address">
-                Dirección: <span id="location">123 Main Street, Cityville</span><br>
-                Telefóno: <span id="phonenumber">+54 (9) 1123-4567</span><br>
-                Mail: <span id="companymail">contact@example.com</span>
-              </address>                          
-            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3284.0528704974445!2d-58.371540924272566!3d-34.60282455745098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDM2JzEwLjIiUyA1OMKwMjInMDguMyJX!5e0!3m2!1ses!2sar!4v1696186708492!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+    <footer class="footer-container row">
+        <div class="row">
+            <div class="footer-socials-section col-md-3 mb-2">
+                <div class="row">
+                    <h4 class="social-media-header text-center">Seguinos en:</h4>
+                </div>
+                <div class="social-media-logo-div row">
+                    <a href="http://www.twitter.com/" target="_blank" class="col pr-1 pl-1 social-media-logo">
+                        <i class="fa-brands fa-twitter icon"></i>
+                    </a>
+                    <a href="http://www.facebook.com/" target="_blank" class="col pr-1 pl-1 social-media-logo">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="http://www.instagram.com" target="_blank" class="col pr-1 pl-1 social-media-logo">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="http://www.twitch.com/" target="_blank" class="col pr-1 pl-1 social-media-logo">
+                        <i class="fa-brands fa-twitch"></i>
+                    </a>
+                    <a href="http://www.youtube.com/" target="_blank" class="col pr-1 pl-1 social-media-logo">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-address-section col-md-5 mb-2">
+                <div class="row">
+                    <div class="col">
+                        <address class="footer-address text-center">
+                            Dirección: <span id="location">123 Main Street, Cityville</span><br>
+                            Telefóno: <span id="phonenumber">+54 (9) 1123-4567</span><br>
+                            Mail: <span id="companymail">contact@example.com</span>
+                        </address>
+                    </div>
+                    <div class="col">
+                        <iframe class="footer-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9843.962821530464!2d-58.412298815974346!3d-34.57814491548086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1698029908491!5m2!1ses!2sar" width="300" height="200" style="border:0;" allowfullscreen="" scrolling="no" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                    </div>
+                </div>
+            </div>
+            <div class="footer-legal-section col-md-4 mb-2">
+                <ul class="legal-links text-center">
+                    <li class="legal-links-item"><a href="https://www.google.com/" target="_blank">Acuerdos y condiciones</a></li>
+                    <li class="legal-links-item"><a href="https://www.google.com/" target="_blank">Política de privacidad</a></li>
+                    <li class="legal-links-item"><a href="https://www.google.com/" target="_blank">Envíos y devoluciones</a></li>
+                    <li class="legal-links-item"><a href="./pages/contacto.html" target="_blank">Contactacte con nosotros</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
-
 </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
