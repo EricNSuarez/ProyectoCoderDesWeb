@@ -85,19 +85,15 @@ body {
     background-position:top;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 10px;
     min-height: 300px;
 
     h1 {
-        color: white;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        font-size: 60px;
     }
 }
 
-.carousel .carousel-item {
+.carousel {
     h5, p {
-        color: white;
         text-shadow: 1px 1px 1px black;
     }
 
@@ -117,64 +113,34 @@ body {
     background-position:top;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 10px;
-
-    h1 {
-        color: white;
-        text-transform: uppercase;
-        text-align: center;
-    }
 
     iframe {
         max-width: 600px;
-        margin: auto;
     }
 
-}
-
-.mision-section,
-.valores-section,
-.historia-section {
-    padding: 25px;
-    font-size: 25px;
-    text-align: center;
-    color: #333;
-
-    h2 {
-        font-size: 45px;
-    }
-
-    p {
-        padding: 10px;
-    }
 }
 
 .valores-section {
     background-color: #711461;
     background-image: url("../assets/img/background-binding-dark.png");
-    color: white;
-
 }
 
 /* CONTACTO */
 .contacto-main {
     background-color: #711461;
     background-image: url("../assets/img/background-binding-dark.png");
-    color: white;
 }
 
 .title-h3-dark-bg {
     color: #f9d108;
-    text-transform: uppercase;
 }
 
-.contacto-img img {
-    object-fit: none; /* Do not scale the image */
-    object-position: center; /* Center the image within the element */
-    width: 100%;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    box-shadow: 1px 1px 2px #212529;
+.contacto-img {
+    img {
+        object-fit: none;
+        object-position: center;
+        box-shadow: 0px 1px 1px #212529;
+    }
   }
 
 #floatingTextarea.form-comentarios {
@@ -197,11 +163,9 @@ body {
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 10px;
-    min-height: 250px;
+    min-height: 300px;
 
     h1, span {
-        color: white  ;
         text-shadow: 0px 1px 1px #333;
     }
 }
@@ -216,21 +180,10 @@ body {
     min-height: 300px;
 
     h1, p {
-        color: white;
         text-shadow: 1px 0px 1px #333;
     }
 }
 
-.coleccion-card {
-    font-weight:500;
-}
-
 .coleccion-item-price {
-    text-align: right;
-    text-decoration: underline;
     text-underline-offset: 5px;
-}
-
-.coleccion-item-name {
-    text-align: left;
 }
