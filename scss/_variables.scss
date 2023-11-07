@@ -1,0 +1,36 @@
+// Tipografías
+$underline-offset-5: 5px;
+
+// Colores
+$color-white: #ffffff;
+$color-gray: #333333;
+$color-black: #000000;
+$color-purple: #711461;
+$color-magenta: #c61476;
+$color-yellow: #f9d108;
+$color-purple-light: #9d87ab;
+$color-magenta-light: #e27497;
+$color-yellow-light: #ffef77;
+$color-magenta-dark: #b52454;
+
+
+// Sombras
+$text-shadow-right: 1px 0px 1px $color-gray; // Sombra a la derecha
+$text-shadow-bottom: 0px 1px 1px $color-gray; // Sombra proveniente desde abajo
+$text-shadow-soft: 1px 1px 3px #00000080; // Sombra suavizada
+$text-shadow-small-black: 1px 1px 1px $color-black; // Sombra pequeña
+
+$box-shadow-bottom: 0px 1px 1px $color-gray;
+$box-shadow-soft-purple: 0 0 0 .25rem #fd0dd840;
+
+// Gradientes
+$linear-gradient: (
+  white-to-gray: linear-gradient(60deg, $color-white 0%, $color-gray 100%),
+  gray-to-black: linear-gradient(60deg, $color-gray 0%, $color-black 100%),
+  purple-to-magenta: linear-gradient(60deg, $color-purple 0%, $color-magenta 100%),
+  magenta-to-purple: linear-gradient(60deg, $color-magenta 0%, $color-purple 100%),
+  magenta-to-yellow: linear-gradient(60deg, $color-magenta 0%, $color-yellow 100%),
+  yellow-to-white: linear-gradient(60deg, $color-yellow 0%, $color-white 100%),
+  purple-light-to-magenta-light: linear-gradient(60deg, $color-purple-light 0%, $color-magenta-light 100%),
+  magenta-light-to-yellow-light: linear-gradient(60deg, $color-magenta-light 0%, $color-yellow-light 100%)
+);

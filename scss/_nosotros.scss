@@ -1,0 +1,11 @@
+// Nosotros page
+.nosotros-section {
+    @include background-image("../assets/img/image.png");
+    iframe {
+        max-width: 600px;
+    }
+}
+
+.valores-section {
+    background-image: map-get($map: $linear-gradient, $key: purple-to-magenta)
+}

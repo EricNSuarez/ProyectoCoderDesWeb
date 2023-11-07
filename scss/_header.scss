@@ -1,0 +1,22 @@
+.main-header {
+    background-color: $color-magenta-dark;
+}
+
+.main-nav-li {
+    font-family: $header-font;
+
+    .main-nav-a {
+        color: $color-white;
+        
+        &:hover {
+            color: $color-yellow-light;
+        }
+    }
+
+    .a-current {
+        color: $color-yellow;
+        font-weight: bold;
+        text-underline-offset: $underline-offset-5;
+    }
+
+}

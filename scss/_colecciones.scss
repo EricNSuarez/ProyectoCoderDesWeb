@@ -1,0 +1,17 @@
+// Página de colecciones
+.colecciones-section {
+    background: $color-black;
+    background: linear-gradient(rgba(171, 171, 171, 0.1), #000000cc), url(../assets/img/colecciones.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+
+    h1, p {
+        text-shadow: $text-shadow-right;
+    }
+}
+
+.coleccion-item-price {
+    text-underline-offset: $underline-offset-5;
+}   

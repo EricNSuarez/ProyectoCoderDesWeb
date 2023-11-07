@@ -1,0 +1,20 @@
+// Sección principal en index
+.main-section {
+    @include background-image("../assets/img/image.png", top);
+    min-height: 300px;
+
+    h1 {
+        text-shadow: $text-shadow-soft;
+    }
+}
+
+// Carrusel
+.carousel {
+    h5, p {
+        text-shadow: $text-shadow-small-black;
+    }
+
+    .container {
+        max-width: 1092px;
+    }
+}

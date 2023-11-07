@@ -1,0 +1,30 @@
+// Footer
+.footer-container {
+    background-color: $color-yellow;
+}
+
+// Reorganizar footer en pantallas grandes
+@media (min-width: 768px) {
+    .footer-legal-section {
+        order: 1;
+    }
+
+    .footer-socials-section {
+        order: 2;
+    }
+
+    .footer-address-section {
+        order: 3
+    }
+}
+
+// Redes sociales
+.social-media-logo {
+    color: $color-magenta;
+    max-width: fit-content;
+}
+
+// Vínculos legales
+.legal-link {
+    color: $color-black;
+}

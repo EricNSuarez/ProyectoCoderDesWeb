@@ -1,0 +1,10 @@
+// Página de calendario
+.eventos-section {
+    @include background-image("../assets/img/publico-image-dark-overlay.jpg");
+    min-height: 300px;
+
+    h1, span {
+        text-shadow: $text-shadow-bottom;
+    }
+
+}

@@ -1,0 +1,38 @@
+// Página de contacto
+.contacto-main {
+    background-color: $color-purple;
+    background-image: url("../assets/img/background-binding-dark.png");
+}
+
+.title-h3-dark-bg {
+    color: $color-yellow;
+}
+
+.contacto-img {
+    img {
+        object-fit: none;
+        object-position: center;
+        box-shadow: $box-shadow-bottom;
+    }
+}
+
+#floatingTextarea.form-comentarios {
+    height: 130px;
+}
+
+.contacto-btn {
+    background-color: $color-magenta;
+    border-color: $color-magenta;
+
+    &:hover {
+        background-color: $color-magenta-light;
+        border-color: $color-magenta-light  ;
+    }
+}
+
+.form-control {
+    &:focus {
+        border-color: $color-magenta;
+        box-shadow: $box-shadow-soft-purple;
+    }
+}
