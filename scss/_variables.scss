@@ -26,11 +26,12 @@ $box-shadow-soft-purple: 0 0 0 .25rem #fd0dd840;
 // Gradientes
 $linear-gradient: (
   white-to-gray: linear-gradient(60deg, $color-white 0%, $color-gray 100%),
+  white-to-white:  linear-gradient(to left bottom, #ffffff, #fff9ff, #fff3f3, #fff1d9, #fff8c6),
   gray-to-black: linear-gradient(60deg, $color-gray 0%, $color-black 100%),
   purple-to-magenta: linear-gradient(60deg, $color-purple 0%, $color-magenta 100%),
   magenta-to-purple: linear-gradient(60deg, $color-magenta 0%, $color-purple 100%),
   magenta-to-yellow: linear-gradient(60deg, $color-magenta 0%, $color-yellow 100%),
   yellow-to-white: linear-gradient(60deg, $color-yellow 0%, $color-white 100%),
   purple-light-to-magenta-light: linear-gradient(60deg, $color-purple-light 0%, $color-magenta-light 100%),
-  magenta-light-to-yellow-light: linear-gradient(60deg, $color-magenta-light 0%, $color-yellow-light 100%)
+  magenta-light-to-yellow-light: linear-gradient(60deg, $color-magenta-light 0%, $color-yellow-light 100%),
 );

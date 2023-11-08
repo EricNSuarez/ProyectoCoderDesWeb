@@ -75,7 +75,7 @@ body {
 
 .nosotros-section {
   background-image: url("../assets/img/image.png");
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -85,6 +85,10 @@ body {
 
 .valores-section {
   background-image: linear-gradient(60deg, #711461 0%, #c61476 100%);
+}
+
+.mision-section, .historia-section {
+  background-image: linear-gradient(to left bottom, #ffffff, #fff9ff, #fff3f3, #fff1d9, #fff8c6);
 }
 
 .contacto-main {
