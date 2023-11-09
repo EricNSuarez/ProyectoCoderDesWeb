@@ -12,8 +12,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a:hover {
+  color: #904caf;
+}
+
 .main-header {
   background-color: #b52454;
+}
+.main-header button {
+  color: #b52454;
 }
 
 .main-nav-li {
@@ -137,7 +144,48 @@ body {
 }
 
 .coleccion-item-price {
-  text-underline-offset: 5px;
+  text-decoration: none;
+  background: linear-gradient(to left top, rgba(0, 0, 0, 0.6901960784), rgba(0, 0, 0, 0.8));
+}
+
+.coleccion-card {
+  filter: grayscale(0.4);
+}
+.coleccion-card .card-body {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: visibility 0s, opacity 0.5s ease;
+}
+.coleccion-card .card-body .coleccion-item-name {
+  background-color: rgba(255, 255, 255, 0.8666666667);
+}
+.coleccion-card::after {
+  content: "";
+  background: transparent;
+  border: 0.3rem solid #c61476;
+  top: 1rem;
+  right: -1rem;
+  bottom: -1rem;
+  left: 1rem;
+  position: absolute;
+  z-index: -1;
+  transition: right 0.5s ease, bottom 0.5s ease;
+}
+.coleccion-card:hover {
+  filter: grayscale(0);
+}
+.coleccion-card:hover .card-body {
+  visibility: visible;
+  opacity: 1;
+}
+.coleccion-card:hover::after {
+  right: 0;
+  bottom: 0;
 }
 
 .eventos-section {

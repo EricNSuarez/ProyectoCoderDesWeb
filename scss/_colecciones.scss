@@ -13,5 +13,54 @@
 }
 
 .coleccion-item-price {
-    text-underline-offset: $underline-offset-5;
-}   
+    text-decoration: none;
+    background: linear-gradient(to left top, #000000B0, #000000CC);
+}
+
+.coleccion-card {
+    .card-body {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: visibility 0s, opacity 0.5s ease;
+
+        .coleccion-item-name {
+            background-color: #ffffffdd;
+        }
+
+    }
+
+    filter: grayscale(.4);
+
+    &::after {
+        content: '';
+        background: transparent;
+        border: 0.3rem solid $color-magenta;
+        top: 1rem;
+        right: -1rem;
+        bottom: -1rem;
+        left: 1rem;
+        position: absolute;
+        z-index: -1;
+        transition: right 0.5s ease, bottom 0.5s ease;
+    }
+
+    &:hover {
+        filter: grayscale(0);
+
+        .card-body {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        &::after {
+            right: 0;
+            bottom: 0;
+        }
+        
+      }
+}

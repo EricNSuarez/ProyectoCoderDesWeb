@@ -1,5 +1,9 @@
 .main-header {
     background-color: $color-magenta-dark;
+
+    button {
+        color: $color-magenta-dark;
+    }
 }
 
 .main-nav-li {
@@ -10,7 +14,7 @@
         
         &:hover {
             color: $color-yellow-light;
-        }
+        }   
     }
 
     .a-current {
