@@ -10,11 +10,17 @@
 
 // Carrusel
 .carousel {
-    h5, p {
-        text-shadow: $text-shadow-small-black;
-    }
-
     .container {
         max-width: 1092px;
     }
+
+    .container::after {
+        display: block;
+        position: relative;
+        background-image: map-get($map: $linear-gradient, $key: sombra-inferior-20perc);
+        margin-top: -150px;
+        height: 150px;
+        width: 100%;
+        content: '';
+      }
 }

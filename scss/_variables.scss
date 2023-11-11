@@ -34,4 +34,5 @@ $linear-gradient: (
   yellow-to-white: linear-gradient(60deg, $color-yellow 0%, $color-white 100%),
   purple-light-to-magenta-light: linear-gradient(60deg, $color-purple-light 0%, $color-magenta-light 100%),
   magenta-light-to-yellow-light: linear-gradient(60deg, $color-magenta-light 0%, $color-yellow-light 100%),
+  sombra-inferior-20perc: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 0.8) 100%),
 );
