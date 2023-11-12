@@ -8,6 +8,12 @@
     }
 }
 
+@media (min-width: 640px) {
+    .main-section {
+        @include background-image("../assets/img/image_640.png", top);
+    }
+}
+
 // Carrusel
 .carousel {
     .container {

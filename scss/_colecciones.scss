@@ -12,6 +12,12 @@
     }
 }
 
+@media (min-width: 640px) {
+    .colecciones-section {
+        background: linear-gradient(rgba(171, 171, 171, 0.1), #000000cc), url(../assets/img/colecciones_640.jpg);
+    }
+}
+
 .coleccion-item-price {
     text-decoration: none;
     background: linear-gradient(to left top, #000000B0, #000000CC);

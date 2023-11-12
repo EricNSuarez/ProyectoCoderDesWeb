@@ -73,6 +73,14 @@ a:hover {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5019607843);
 }
 
+@media (min-width: 640px) {
+  .main-section {
+    background-image: url("../assets/img/image_640.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 .carousel .container {
   max-width: 1092px;
 }
@@ -96,6 +104,14 @@ a:hover {
   max-width: 600px;
 }
 
+@media (min-width: 640px) {
+  .nosotros-section {
+    background-image: url("../assets/img/image_640.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 .valores-section {
   background-image: linear-gradient(60deg, #711461 0%, #c61476 100%);
 }
@@ -149,6 +165,11 @@ a:hover {
   text-shadow: 1px 0px 1px #333333;
 }
 
+@media (min-width: 640px) {
+  .colecciones-section {
+    background: linear-gradient(rgba(171, 171, 171, 0.1), rgba(0, 0, 0, 0.8)), url(../assets/img/colecciones_640.jpg);
+  }
+}
 .coleccion-item-price {
   text-decoration: none;
   background: linear-gradient(to left top, rgba(0, 0, 0, 0.6901960784), rgba(0, 0, 0, 0.8));
@@ -203,4 +224,13 @@ a:hover {
 }
 .eventos-section h1, .eventos-section span {
   text-shadow: 0px 1px 1px #333333;
+}
+
+@media (min-width: 640px) {
+  .eventos-section {
+    background-image: url("../assets/img/publico-image-dark-overlay_640.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }/*# sourceMappingURL=estilos.css.map */

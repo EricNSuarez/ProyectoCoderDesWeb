@@ -6,6 +6,12 @@
     }
 }
 
+@media (min-width: 640px) {
+    .nosotros-section {
+        @include background-image("../assets/img/image_640.png", top);
+    }
+}
+
 .valores-section {
     background-image: map-get($map: $linear-gradient, $key: purple-to-magenta)
 }
