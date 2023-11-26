@@ -22,6 +22,26 @@
 .social-media-logo {
     color: $color-magenta;
     max-width: fit-content;
+
+    .fa-twitter {
+        color: $color-twitter;
+    }
+
+    .fa-twitch {
+        color: $color-twitch;
+    }
+
+    .fa-youtube {
+        color: $color-youtube;
+    }
+
+    .fa-instagram {
+        color: $color-instagram;
+    }
+
+    .fa-facebook {
+        color: $color-facebook;
+    }
 }
 
 // Vínculos legales
