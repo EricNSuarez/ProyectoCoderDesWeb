@@ -13,6 +13,11 @@ $color-magenta-light: #e27497;
 $color-yellow-light: #ffef77;
 $color-magenta-dark: #b52454;
 $color-purpureus: #B182C7;
+$color-twitter: #1DA1F2;
+$color-facebook: #4267B2;
+$color-instagram: #E1306C;
+$color-youtube: #FF0000;
+$color-twitch: #6441A5;
 
 // Sombras
 $text-shadow-right: 1px 0px 1px $color-gray; // Sombra a la derecha
@@ -35,4 +40,5 @@ $linear-gradient: (
   purple-light-to-magenta-light: linear-gradient(60deg, $color-purple-light 0%, $color-magenta-light 100%),
   magenta-light-to-yellow-light: linear-gradient(60deg, $color-magenta-light 0%, $color-yellow-light 100%),
   sombra-inferior-20perc: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 0.8) 100%),
+  radial-error: radial-gradient(circle, #b52454, #a61b59, #96155d, #841360, #711461),
 );

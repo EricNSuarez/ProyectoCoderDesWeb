@@ -1,5 +1,5 @@
 // Página de error
 .body-404 {
-    // background-color: $color-magenta-dark;
-    background-image: map-get($map: $linear-gradient, $key: purple-to-magenta);
+    background-color: $color-magenta-dark;
+    background-image: map-get($map: $linear-gradient, $key: radial-error);
 }
