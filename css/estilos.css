@@ -233,4 +233,7 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
   }
+}
+.body-404 {
+  background-image: linear-gradient(60deg, #711461 0%, #c61476 100%);
 }/*# sourceMappingURL=estilos.css.map */
